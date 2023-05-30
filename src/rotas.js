@@ -1,8 +1,11 @@
 const { Router } = require('express')
-const usuarioControlador = require('./controladores/cliente')
+const clienteControlador = require('./controladores/cliente')
+
+const { validarCamposObrigatoriosCliente, validarCPFouEmailExistentes } = require('./intermediarios/validacoes')
 
 const rotas = Router()
 
-rotas.get('/', usuarioControlador.index)
+rotas.get('/cliente', clienteControlador.listar)
+rotas.post('/cliente', validarCamposObrigatoriosCliente, validarCPFouEmailExistentes, clienteControlador.cadastrar)
 
 module.exports = rotas

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nome": "Victor",
+        "email": "victor.cubos@cubos.academy",
+        "cpf": "99999999999"
+    },
+    {
+        "id": 2,
+        "nome": "Victor",
+        "email": "dbet02@cubos.academy",
+        "cpf": "42977114009"
+    }
+]
