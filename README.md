@@ -132,7 +132,7 @@ Critérios de aceite:
 ```javascript
 // Resposta da requisição para listagem de cliente por ID, caso nao encontre cliente com ID informado (response body)
 {
-    "mensagem": "Não existe cliente para o ID informado"
+    "mensagem": "Cliente não encontrado"
 }
 ```
 
@@ -158,8 +158,8 @@ Critérios de aceite:
 ```
 
 ```javascript
-// Corpo da resposta para excluir cliente por ID caso nao encontre cliente com IF informado (response body)
+// Corpo da resposta para excluir cliente por ID caso nao encontre cliente com ID informado (response body)
 {
-    "mensagem": "Não foi encontrado cliente com ID informado"
+    "mensagem": "Cliente não encontrado"
 }
 ```
