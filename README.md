@@ -1,4 +1,4 @@
-# revisao-api-rest-dbe-t02
+# revisao-m02-dbe-t02
 <summary><b>Cadastrar Cliente</b></summary>
 
 #### `POST` `/cliente`
