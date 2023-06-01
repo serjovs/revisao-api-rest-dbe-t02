@@ -10,13 +10,13 @@ const leArquivoConverteParaArray = (caminhoArquivo) => {
     return dadosArray
 }
 
-//  Precisamos saber qual é o arquivo ?
+//  Precisamos saber qual é o arquivo
 //  Precisamo ter quais dados serão escritos
-// Quando for adicionar item através do `push`
-// pós push, escrever o conteúdo novo no arquivo
 const converteArrayParaTextoEEscreveNoArquivo = (caminhoArquivo, array) => {
+    // transformar em texto
     let dadosString = JSON.stringify(array)
-    console.log(dadosString)
+    
+    // escrever conteudo no arquivo
     fs.writeFileSync(caminhoArquivo, dadosString)
 }
 
